@@ -62,7 +62,7 @@ mixin sanofiB()
                 span Przejście do Serwisu spowoduje aktywację indywidualnego konta Użytkownika Serwisu umożliwiając jednorazowy dostęp do zamieszczonych w nim treści dla lekarzy, bez konieczności rejestracji. Umożliwiamy tę formę dostępu wyłącznie lekarzom, którzy zarejestrowali się w bazie kontaktowej Sanofi. Jednorazowy dostęp do treści Serwisu jest w tym przypadku udzielany w oparciu o dane z bazy kontaktowej Sanofi.
                 br
                 br
-                span <a href='RTE_UNSUBSCRIBE' style='color: #000000;' title='Anuluj subskrypcję' target="_blank">Anuluj subskrypcję</a>&nbsp; | &nbsp;<a href='https://www.campus.sanofi/dam/jcr:a4820214-276b-4c7b-8d17-8cfd6f83e1ba/Klauzula%20informacyjna%20do%20bazy%20kontaktowej%20Sanofi%20sp.%20z%20o.o._02.04.2024_upd.pdf' style='color: #000000;' title='Ochrona danych w Bazie Sanofi' target="_blank">Ochrona danych w Bazie Sanofi</a>&nbsp; | &nbsp;<a href='https://www.campus.sanofi/pl/prawny/nota-prawna' style='color: #000000;' title='Nota Prawna' target="_blank">Nota Prawna</a>&nbsp; | &nbsp;<a href='https://www.campus.sanofi/pl/prawny/regulamin-serwisu-internetowego' style='color: #000000;' title='Regulamin' target="_blank">Regulamin</a>&nbsp; | &nbsp;<a href='https://www.campus.sanofi/pl/prawny/polityka-prywatnosci' style='color: #000000;' title='Polityka Prywatności Serwisu' target="_blank">Polityka Prywatności Serwisu</a>
+                span <a href='RTE_UNSUBSCRIBE' style='color: #4f5cd6;' title='Anuluj subskrypcję' target="_blank">Anuluj subskrypcję</a>&nbsp; | &nbsp;<a href='https://www.campus.sanofi/dam/jcr:a4820214-276b-4c7b-8d17-8cfd6f83e1ba/Klauzula%20informacyjna%20do%20bazy%20kontaktowej%20Sanofi%20sp.%20z%20o.o._02.04.2024_upd.pdf' style='color: #4f5cd6;' title='Ochrona danych w Bazie Sanofi' target="_blank">Ochrona danych w Bazie Sanofi</a>&nbsp; | &nbsp;<a href='https://www.campus.sanofi/pl/prawny/nota-prawna' style='color: #4f5cd6;' title='Nota Prawna' target="_blank">Nota Prawna</a>&nbsp; | &nbsp;<a href='https://www.campus.sanofi/pl/prawny/regulamin-serwisu-internetowego' style='color: #4f5cd6;' title='Regulamin' target="_blank">Regulamin</a>&nbsp; | &nbsp;<a href='https://www.campus.sanofi/pl/prawny/polityka-prywatnosci' style='color: #4f5cd6;' title='Polityka Prywatności Serwisu' target="_blank">Polityka Prywatności Serwisu</a>
             td(width='30')
     table(width="650" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto" bgcolor="#FFFFFF")
         tr
@@ -198,22 +198,17 @@ mixin deeplink(link, content)
     | </div>
 
 mixin survey()
+    table(width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#F5F5F5" style="margin: 0 auto")
+        tr
+            td(height="20")
+        tr
+            td(valign="top" style="margin-left:auto; margin-right:auto; text-align:center; font-size: 18px; line-height: 20px; font-family:Arial, Helvetica, Verdana, sans-serif; color: #000000; font-weight: bold;")
+                span Jak bardzo treść tego e-maila jest interesująca<br>i przydatna w codziennej praktyce klinicznej?
+        tr
+            td(height="20")
     table.survey(width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-left:auto; margin-right:auto; text-align:left; font-size: 16px; line-height: 19px; font-family:Arial, Helvetica, Verdana, sans-serif; color: #000000;")
         tr
             td(width="27")
-            td(height="20")
-            td(width="27")
-        tr
-            td
-            td(valign="top" style="margin-left:auto; margin-right:auto; text-align:center; font-size: 18px; line-height: 20px; font-family:Arial, Helvetica, Verdana, sans-serif; color: #000000; font-weight: bold;")
-                span Jak bardzo treść tego e-maila jest interesująca<br>i przydatna w codziennej praktyce klinicznej?
-            td
-        tr
-            td
-            td(height="20")
-            td
-        tr
-            td
             td
                 table.survey(width="100%" border="0" cellpadding="0" cellspacing="0" style="font-family: Arial, Helvetica, sans-serif; font-weight: normal;width:100%;")
                     tr
@@ -284,5 +279,5 @@ mixin survey()
                     tr
                         td(height="10")
                         td
-            td
+            td(width="27")
 
