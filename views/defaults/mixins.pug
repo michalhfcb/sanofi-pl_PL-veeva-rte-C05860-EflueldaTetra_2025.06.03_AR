@@ -1,0 +1,288 @@
+mixin picture(type,url,width)
+    if(type)
+        if(inline)
+            img(src='./images/' + url alt="RTE_ALT" title="RTE_ALT" width=width style="display: inline-block; margin: 0 5px; border: 0;")
+        else
+            img(src='./images/' + url alt="RTE_ALT" title="RTE_ALT" width=width style="display: block; margin: 0; border: 0;")
+    else
+        img(src=url alt="RTE_ALT" style="display: block; margin: 0 auto; border: 0;")
+
+mixin pictureResize(width,url,clas)
+    img(src='./images/' + url class=clas alt="RTE_ALT" title="RTE_ALT" style="display: block; margin: 0; border: 0; max-width: 650px" width=width)
+
+mixin sandoz()
+    table(width="650" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto")
+        tr
+            td(width="30" height="10")
+            td(style="font-family: Arial, Helvetica, sans-serif;text-align: justify; font-size:12px; font-weight: normal; color: #595959;")
+                span Niniejsza wiadomość została wysłana przez Sandoz Polska Sp. z o.o. z siedzibą w Warszawie (02-672) przy ulicy Domaniewskiej 50C (dalej: „Sandoz”) na podstawie Pana/Pani zgody na otrzymywanie informacji edukacyjnych i marketingowych drogą elektroniczną. W każdej chwili może Pan/Pani wycofać swoją zgodę na otrzymywanie informacji od Sandoz, <a style="text-decoration: none; color: #007ac9; font-weight: bold;" href="RTE_UNSUBSCRIBE" title="Link do anulowania subskrypcji"> klikając tutaj</a>.<br /><br />Z inspektorem ochrony danych osobowych Sandoz można się skontaktować, pisząc na adres: <a href="mailto:ochrona.danych-sandoz@sandoz.com" target="_blank" title="ochrona.danych-sandoz@sandoz.com" style="text-decoration: none;  color:#595959;">ochrona.danych-sandoz@sandoz.com</a>. Przysługuje Panu/Pani prawo dostępu do Pana/Pani danych osobowych, żądania ich sprostowania, usunięcia lub ograniczenia przetwarzania, prawo do przenoszenia danych, a także prawo do wniesienia skargi do właściwego Urzędu Ochrony Danych Osobowych. Szczegółowe informacje dotyczące przetwarzania Pana/ Pani danych i przysługujących Panu/Pani praw dostępne są na naszej stronie internetowej w zakładce <a style="text-decoration: none; color: #ff1c24; font-weight: bold;" href="https://www.sandoz.pl/polityka-prywatnosci" title="Polityka prywatności">Polityka Prywatności</a>.<br /><br />Zarówno niniejszy e-mail, jak i wszystkie zamieszczone w nim materiały lub dołączone do niego załączniki (w&nbsp;tym w&nbsp;szczególności stanowiące utwory, znaki towarowe, wzory przemysłowe, bazy danych wraz z ich wyborem i zestawieniami są objęte prawami własności intelektualnej Sandoz Polska Sp. z o.o. z siedzibą w&nbsp;Warszawie (Uprawniony) chronionymi obowiązującymi przepisami prawa. Zakazane jest ich zwielokrotnianie i&nbsp;rozpowszechnianie w jakikolwiek sposób i w jakiejkolwiek formie, zarówno w całości, jak i w części, bez zgody Uprawnionego.
+            td(width="30")
+
+mixin sanofiA()
+    table(width="650" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto" bgcolor="#F5F5F5")
+        tr
+            td(height="20")
+            td
+            td
+        tr
+            td(width="30")
+            td(style='font-family:Arial,Helvetica,sans-serif; font-size:10px; line-height:12px; text-align:justify;')
+                span Ten mail został wysłany przez Sanofi sp. z o.o. z adresem siedziby ul. Marcina Kasprzaka 6, 01-211 Warszawa, NIP 813-01-40-525, wpisaną do rejestru przedsiębiorców KRS, prowadzonego przez Sąd Rejonowy dla m.st. Warszawy, XII Wydz. Gospod. pod nr KRS: 0000036286, ponieważ zarejestrowałaś/eś się w bazie kontaktowej Sanofi i udzieliłaś/eś zgodę na otrzymywanie informacji handlowych poprzez wiadomości e-mail. Treści zawarte w mailu mają charakter informacyjno-reklamowy.
+                br
+                br
+                span <a href='RTE_UNSUBSCRIBE' style='color: #000000;' title='Anuluj subskrypcję' target="_blank">Anuluj subskrypcję</a>&nbsp; | &nbsp;<a href='https://www.campus.sanofi/dam/jcr:a4820214-276b-4c7b-8d17-8cfd6f83e1ba/Klauzula%20informacyjna%20do%20bazy%20kontaktowej%20Sanofi%20sp.%20z%20o.o._02.04.2024_upd.pdf' style='color: #000000;' title='Ochrona danych w Bazie Sanofi' target="_blank">Ochrona danych w Bazie Sanofi</a>
+            td(width='30')
+    table(width="650" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto" bgcolor="#F5F5F5")
+        tr
+            td(height="30")
+            td
+        tr
+            td( align="right")
+                +picture(true,'sanofi.png','127')
+            td(width="30")
+        tr
+            td(height="30")
+            td
+
+mixin sanofiB()
+    table(width="650" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto" bgcolor="#FFFFFF")
+        tr
+            td(height="15")
+            td
+            td
+        tr
+            td(width="30")
+            td(style='font-family:Arial,Helvetica,sans-serif; font-size:10px; line-height:12px; text-align:justify;')
+                span Ten mail został wysłany przez Sanofi Sp. z o.o. z adresem siedziby ul. Marcina Kasprzaka 6, 01-211 Warszawa, NIP 813-01- 40-525, wpisaną do rejestru przedsiębiorców KRS, prowadzonego przez Sąd Rejonowy dla m.st. Warszawy, XII Wydz. Gospod. pod nr. KRS: 0000036286, ponieważ zarejestrowałaś/eś się w bazie kontaktowej Sanofi i udzieliłaś/eś zgodę na otrzymywanie informacji handlowych poprzez wiadomości e-mail. Treści zawarte w mailu mają charakter informacyjno-reklamowy.
+                br
+                br
+                span Zawarte w niniejszym mailu linki prowadzą do materiałów dla lekarzy opublikowanych w serwisie <a href="campus.sanofi/pl" target="_blank" style="text-decoration:none; color:#000000">campus.sanofi/pl</a> (dalej również jako „Serwis”). Administratorem danych osobowych Użytkowników Serwisu jest Sanofi sp. z o.o. Rozpoczęcie korzystania z Serwisu jest jednoznaczne z akceptacją Regulaminu, Noty Prawnej i Polityki prywatności Serwisu.
+                br
+                br
+                span Przejście do Serwisu spowoduje aktywację indywidualnego konta Użytkownika Serwisu umożliwiając jednorazowy dostęp do zamieszczonych w nim treści dla lekarzy, bez konieczności rejestracji. Umożliwiamy tę formę dostępu wyłącznie lekarzom, którzy zarejestrowali się w bazie kontaktowej Sanofi. Jednorazowy dostęp do treści Serwisu jest w tym przypadku udzielany w oparciu o dane z bazy kontaktowej Sanofi.
+                br
+                br
+                span <a href='RTE_UNSUBSCRIBE' style='color: #000000;' title='Anuluj subskrypcję' target="_blank">Anuluj subskrypcję</a>&nbsp; | &nbsp;<a href='https://www.campus.sanofi/dam/jcr:a4820214-276b-4c7b-8d17-8cfd6f83e1ba/Klauzula%20informacyjna%20do%20bazy%20kontaktowej%20Sanofi%20sp.%20z%20o.o._02.04.2024_upd.pdf' style='color: #000000;' title='Ochrona danych w Bazie Sanofi' target="_blank">Ochrona danych w Bazie Sanofi</a>&nbsp; | &nbsp;<a href='https://www.campus.sanofi/pl/prawny/nota-prawna' style='color: #000000;' title='Nota Prawna' target="_blank">Nota Prawna</a>&nbsp; | &nbsp;<a href='https://www.campus.sanofi/pl/prawny/regulamin-serwisu-internetowego' style='color: #000000;' title='Regulamin' target="_blank">Regulamin</a>&nbsp; | &nbsp;<a href='https://www.campus.sanofi/pl/prawny/polityka-prywatnosci' style='color: #000000;' title='Polityka Prywatności Serwisu' target="_blank">Polityka Prywatności Serwisu</a>
+            td(width='30')
+    table(width="650" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto" bgcolor="#FFFFFF")
+        tr
+            td(height="30")
+            td
+        tr
+            td( align="right")
+                +picture(true,'logo_dol.png','127')
+            td(width="30")
+        tr
+            td(height="30")
+            td
+
+mixin citibank()
+    table(width="650" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto" bgcolor="#ffffff" )
+        tr
+            td(width="28")
+            td(style="text-align:justify ; font-size: 8px; font-family:Arial, Helvetica, Verdana, sans-serif; color: #595959; letter-spacing: 0.16px")
+                span www.citihandlowy.pl
+                br
+                span Bank Handlowy w Warszawie S.A.
+                br
+                br
+                span Linki umieszczane w naszych komunikatach prowadzą do stron internetowych lub materiałów marketingowych naszego Banku lub naszych partnerów, które mają charakter informacyjny. Nie wykorzystujemy linków do zbierania danych wrażliwych od naszych Klientów. Jeśli cokolwiek budzi Państwa zastrzeżenia, prosimy o kontakt z CitiService lub nadawcą komunikatu ze strony Banku. Niniejszy materiał marketingowy został wydany jedynie w celach informacyjnych i nie stanowi oferty w rozumieniu art. 66 Kodeksu cywilnego. Znaki Citi oraz Citi Handlowy stanowią zarejestrowane znaki towarowe Citigroup Inc., używane na podstawie licencji. Spółce Citigroup Inc. oraz jej spółkom zależnym przysługują również prawa do niektórych innych znaków towarowych tu użytych. Bank Handlowy w Warszawie S.A. z siedzibą w Warszawie, ul. Senatorska 16, 00-923 Warszawa, zarejestrowany przez Sąd Rejonowy dla m.st. Warszawy w Warszawie, XII Wydział Gospodarczy Krajowego Rejestru Sądowego, pod nr. KRS 000 000 1538; NIP 526-025-02-91; wysokość kapitału zakładowego wynosi 522 638 400 złotych, kapitał został w pełni opłacony.
+                br
+                br
+                span Links in our communication messages lead to websites or marketing materials of our Bank or our partners and are provided for information purposes. Links are not used to collect sensitive data from our Clients. In case of any doubts, please contact the sender of the message from the Bank. This advertising material is for information purposes only and does not constitute an offer in the meaning of article 66 of the Civil Code. Citi and Citi Handlowy are registered trademarks of Citigroup Inc., used under license. Citigroup Inc. and its subsidiaries are also entitled to rights to certain other trademarks contained herein. Bank Handlowy w Warszawie S.A. with its registered office in Warsaw at ul. Senatorska 16, 00-923 Warszawa, entered in the Register of Entrepreneurs of the National Court Register by the District Court for the capital city of Warsaw in Warsaw, 12th Commercial Division of the National Court Register, under KRS No. 000 000 1538;NIP 526-025-02-91; the share capital is PLN 522,638,400, fully paid-up.
+            td(width="28")
+        tr
+            td(height="20")
+            td
+            td
+
+mixin loreal()
+    table(width="650" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto" bgcolor="#FFFFFF")
+        tr
+            td(height='32')
+            td
+            td
+        tr
+            td(width='30')
+            td(style='font-family:Arial,Helvetica,sans-serif; font-style:italic; font-size:10px; line-height:12px; color:#000000; text-align:center;')
+                | Klauzula informacyjna
+            td(width='30')
+
+        tr
+            td(width='30')
+            td(style='font-family:Arial,Helvetica,sans-serif; font-style:italic; font-size:10px; line-height:12px; color:#000000; text-align:justify;')
+                | Administratorem Pani/Pana danych osobowych jest L’Oréal Polska Sp. z o.o., z siedzibą w Warszawie (00-844) przy ul. Grzybowskiej
+                | 62. Kontakt z Inspektorem Ochrony Danych możliwy jest za pośrednictwem adresu e-mail: <a href='mailto:personal-da@loreal.com' style='color:#0069A6'>personal-da@loreal.com</a>. Przetwarzanie
+                | danych osobowych będzie się odbywać w ramach udzielonej zgody na kontakt w celach marketingu bezpośredniego – na podstawie
+                | z art. 6 ust. 1. lit. a Rozporządzenia Ogólnego o Ochronie Danych Osobowych (dalej RODO). W ramach realizacji tego celu dane
+                | mogą być wykorzystane w procesie profilowania, którego celem jest jak najlepsze dopasowanie przesyłanych informacji do Pani/Pana
+                | potrzeb i zainteresowań (art. 6 ust. 1 lit. f RODO).<br/><br/>
+
+                | Pani/Pana dane mogą być przekazane podmiotom przetwarzającym je na nasze zlecenie, ale tylko w celu i zakresie niezbędnym dla
+                | realizacji ww. celu m. in. podmiotom świadczącym na naszą rzecz usługi IT oraz podmiotom wspierającym działania marketingowe,
+                | przy czym takie podmioty przetwarzają dane na podstawie umów zawartych z nami i wyłącznie zgodnie z naszymi poleceniami. Dane
+                | mogą również zostać udostępnianie podmiotom upoważnionym do tego na podstawie przepisów prawa. Pani/Pana dane osobowe nie
+                | będą przekazywane do państwa trzeciego/organizacji międzynarodowej. Pani/Pana dane osobowe będą przechowywane przez okres
+                | niezbędny dla świadczenia usługi lub do momentu wycofania zgody przez Panią/Pana.<br/><br/>
+
+                | Posiada Pani/Pan prawo dostępu do treści swoich danych oraz prawo ich sprostowania, usunięcia, ograniczenia przetwarzania,
+                | prawo do przenoszenia danych, jak również prawo wniesienia sprzeciwu. Wyrażona przez Panią/Pana zgoda może zostać wycofana
+                | każdej chwili. Wycofanie zgody nie wpłynie na zgodność z prawem przetwarzania Pani/Pana danych osobowych, którego dokonano
+                | na podstawie wyrażonej zgody, przed jej wycofaniem.<br/><br/>
+
+                | <span style='font-weight:bold'>Oświadczenie o wycofaniu zgody na przetwarzanie Pani/Pana danych osobowych należy kierować na adres e-mail: <a href='mailto:personal-da@loreal.com' style='color:#0069A6;'>personal-da@loreal.com</a></span><br/><br/>
+
+                | Przysługuje Pani/Panu prawo wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych, gdy uzna Pani/Pan, iż przetwarzanie
+                | Pani/Pana danych osobowych narusza przepisy RODO.<br/><br/>
+
+                | Ta wiadomość została wysłana przez L’Oréal Polska Sp. z o.o. z siedzibą w Warszawie (00-844), przy ulicy Grzybowska 62, wpisaną
+                | do rejestru przedsiębiorców przez Sąd Rejonowy dla m.st. Warszawy XIII Wydział Gospodarczy Krajowego Rejestru Sądowego pod
+                | numerem: KRS 0000063684, kapitał zakładowy: 1.886.500,00 zł., NIP 524-030-33-75 („L’Oréal”).<br/><br/>
+
+                | <span style='font-style:normal;'>Jeśli chcą Państwo zrezygnować z subskrypcji newsletteru, proszę nacisnąć <a href='RTE_UNSUBSCRIBE' target='_blank' title='Zrezygnować z subskrypcji newsletteru' style='color:#0069A6'>tutaj</a> w celu wypisania się z listy mailingowej.<br/><br/>
+                | Aby dowiedzieć się więcej o tym, w jaki sposób wykorzystywane są dane osobowe należy zapoznać się z naszą <a href='https://www.loreal.com/en/poland/pages/group/privacy-policy-poland/' style='color:#0069A6'>Polityką prywatności</a><br><br>
+
+                | LRP/49/2024</span><br><br>
+            td(width='30')
+
+mixin novartis()
+    table(width="650" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto")
+        tr
+            td(width="30" height="15")
+            td(style="border-top: 1px #007AC9 solid")
+            td(width="30")
+        tr
+            td(width="30" height="10")
+            td(style="font-family: Arial, Helvetica, sans-serif;text-align: justify; font-size:12px; font-weight: normal; color: #595959;")
+                span Niniejsza wiadomość została wysłana przez Novartis Polska Sp. z o.o. z siedzibą w Warszawie (02-674) przy ul. Marynarskiej 15 (dalej: Novartis) na podstawie Pana/Pani zgody na otrzymywanie informacji edukacyjnych i&nbsp;marketingowych drogą elektroniczną. W każdej chwili może Pan/Pani wycofać swoją zgodę na otrzymywanie informacji od Novartis, <a style="text-decoration: none; color: #007ac9;" href="RTE_UNSUBSCRIBE" title="Link do anulowania subskrypcji"> klikając tutaj</a>.<br /><br />Z inspektorem ochrony danych osobowych Novartis można się skontaktować, pisząc na adres: <a href="mailto:ochrona.danych@novartis.com" target="_blank" title="" style="text-decoration: none; color: #007ac9;">ochrona.danych@novartis.com</a>. Przysługuje Panu/Pani prawo dostępu do Pana/Pani danych osobowych, żądania ich sprostowania, usunięcia lub ograniczenia przetwarzania, prawo do przenoszenia danych, a także prawo do wniesienia skargi do właściwego Urzędu Ochrony Danych Osobowych. Szczegółowe informacje dotyczące przetwarzania Pana/ Pani danych i przysługujących Panu/Pani praw dostępne są na naszej stronie internetowej w zakładce <a style="text-decoration: none; color: #ff1c24;" href="https://www.novartis.pl/polityka-prywatnosci" title="Polityka prywatności">Polityka Prywatności</a>.<br><br>Zarówno niniejszy e-mail, jak i wszystkie zamieszczone w nim materiały lub dołączone do niego załączniki (w&nbsp;tym w szczególności stanowiące utwory, znaki towarowe, wzory przemysłowe, bazy danych wraz z ich wyborem i zestawieniami) są objęte prawami własności intelektualnej Novartis Polska Sp. z o.o. z siedzibą w&nbsp;Warszawie chronionymi obowiązującymi przepisami prawa. Zakazane jest ich zwielokrotnianie i&nbsp;rozpowszechnianie w jakikolwiek sposób i w jakiejkolwiek formie, zarówno w całości, jak i w części, bez zgody Novartis.
+            td(width="30")
+        tr
+            td(width="30" height="15")
+            td
+            td(width="30")
+        tr
+            td(width="30" height="1")
+            td(bgcolor="#E00D5B")
+            td(width="30")
+        tr
+            td(width="30" height="15")
+            td
+            td(width="30")
+        tr
+            td(width="30" height="1")
+            td
+                table(width="100%" border="0" cellpadding="0" style="margin: 0 auto")
+                    tr
+                        td(style="font-family: Arial, Helvetica, sans-serif;text-align: justify; font-size:10px; font-weight: normal; color: #595959;")
+                            span Novartis Poland Sp. z o.o., wpisana do Krajowego Rejestru Sądowego prowadzącego przez <br>Sąd Rejonowy dla m.st. Warszawy w Warszawie, XIII Wydział Gospodarczy, KRS 58132,<br>o kapitale zakładowym 44 183 000 złotych, NIP 521-000-02-04.
+                        td(width="175" height="40" align="center" valign="middle")
+                            img(src='images/logo_novartis.png' alt="RTE_ALT" title="RTE_ALT" style="display: block; margin: 0; border: 0;")
+            td(width="30")
+
+mixin deeplink(link, content)
+    | <div style="font-size:0;color:#ffffff">
+    | %%[
+    | set @utms = ''
+    | set @utms = concat('&utm_hcpid=', @Sanofi_ID, '&actid=', @Account_ID, '&Q_Language=PL2134123','&utm_content='!{content}')
+    | ]%%
+    | %%[
+    | set @Website='https://www.campus.sanofi'
+    | set @EndPoint='https://sanofi.eu.janraincapture.com'
+    | set @ClientId='8862kj385mfngv5wxatqk6gzvwjh4v8a'
+    | set @HeaderValues='Basic d3BycWY0cmNmbjUzYnZnZHdyNnZkcnJuazM2ZnphbXc6cDI4NXl1cWVyM3lwZ3ljY3Jkd3NmMmJoNmVuMmNjZGg='
+    | set @CountryCode='PL'
+    | set @RedirectUri= '!{link}'
+    | set @LinkName='Offer'
+    | ]%%
+    | %%=ContentBlockbyId("1612") =%%
+    | </div>
+
+mixin survey()
+    table.survey(width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-left:auto; margin-right:auto; text-align:left; font-size: 16px; line-height: 19px; font-family:Arial, Helvetica, Verdana, sans-serif; color: #000000;")
+        tr
+            td(width="27")
+            td(height="20")
+            td(width="27")
+        tr
+            td
+            td(valign="top" style="margin-left:auto; margin-right:auto; text-align:center; font-size: 18px; line-height: 20px; font-family:Arial, Helvetica, Verdana, sans-serif; color: #000000; font-weight: bold;")
+                span Jak bardzo treść tego e-maila jest interesująca<br>i przydatna w codziennej praktyce klinicznej?
+            td
+        tr
+            td
+            td(height="20")
+            td
+        tr
+            td
+            td
+                table.survey(width="100%" border="0" cellpadding="0" cellspacing="0" style="font-family: Arial, Helvetica, sans-serif; font-weight: normal;width:100%;")
+                    tr
+                        td(style="width:14%;min-width:25px")
+                            a(href= "RTE_SURVEY_LINK&R=1")
+                            table(width="100%" border="0" cellpadding="0" cellspacing="0")
+                                tr
+                                    td(style="text-align:center" align="center" height="40" bgcolor="#E43E3D" width="100%")
+                                        a(href= "RTE_SURVEY_LINK&R=1" style="font-weight: bold; font-family:sans-serif; text-decoration: none; line-height:40px; width:100%;min-width:25px; display:inline-block;color: #ffffff") 1
+
+                        td(style="width: 2px;")
+                        td(style="width:14%;min-width:25px")
+                            a(href= "RTE_SURVEY_LINK&R=2")
+                            table(width="100%" border="0" cellpadding="0" cellspacing="0")
+                                tr
+                                    td(style="text-align:center" align="center" height="40" bgcolor="#E43E3D" width="100%")
+                                        a(href= "RTE_SURVEY_LINK&R=2" style="font-weight: bold; font-family:sans-serif; text-decoration: none; line-height:40px; width:100%;min-width:25px; display:inline-block;color: #ffffff") 2
+
+                        td(style="width: 2px;")
+                        td(style="width:14%;min-width:25px")
+                            a(href= "RTE_SURVEY_LINK&R=3")
+                            table(width="100%" border="0" cellpadding="0" cellspacing="0")
+                                tr
+                                    td(style="text-align:center" align="center" height="40" bgcolor="#E43E3D" width="100%")
+                                        a(href= "RTE_SURVEY_LINK&R=3" style="font-weight: bold; font-family:sans-serif; text-decoration: none; line-height:40px; width:100%;min-width:25px; display:inline-block;color: #ffffff") 3
+
+                        td(style="width: 2px;" )
+                        td(style="width:14%;min-width:25px")
+                            a(href= "RTE_SURVEY_LINK&R=4")
+                            table(width="100%" border="0" cellpadding="0" cellspacing="0")
+                                tr
+                                    td(style="text-align:center" align="center" height="40" bgcolor="#E43E3D" width="100%")
+                                        a(href= "RTE_SURVEY_LINK&R=4" style="font-weight: bold; font-family:sans-serif; text-decoration: none; line-height:40px; width:100%;min-width:25px; display:inline-block;color: #ffffff") 4
+
+                        td(style="width: 2px;" )
+                        td(style="width:14%;min-width:25px")
+                            a(href= "RTE_SURVEY_LINK&R=5")
+                            table(width="100%" border="0" cellpadding="0" cellspacing="0")
+                                tr
+                                    td(style="text-align:center" align="center" height="40" bgcolor="#F8C43D" width="100%")
+                                        a(href= "RTE_SURVEY_LINK&R=5" style="font-weight: bold; font-family:sans-serif; text-decoration: none; line-height:40px; width:100%;min-width:25px; display:inline-block;color: #ffffff") 5
+
+                        td(style="width: 2px;")
+                        td(style="width:14%;min-width:25px")
+                            a(href= "RTE_SURVEY_LINK&R=6")
+                            table(width="100%" border="0" cellpadding="0" cellspacing="0")
+                                tr
+                                    td(style="text-align:center" align="center" height="40" bgcolor="#7FCD31" width="100%")
+                                        a(href= "RTE_SURVEY_LINK&R=6" style="font-weight: bold; font-family:sans-serif; text-decoration: none; line-height:40px; width:100%;min-width:25px; display:inline-block;color: #ffffff") 6
+
+                        td(style="width: 2px;" )
+                        td(style="width:14%;min-width:25px")
+                            a(href= "RTE_SURVEY_LINK&R=7")
+                            table(width="100%" border="0" cellpadding="0" cellspacing="0")
+                                tr
+                                    td(style="text-align:center" align="center" height="40" bgcolor="#7FCD31" width="100%")
+                                        a(href= "RTE_SURVEY_LINK&R=7" style="font-weight: bold; font-family:sans-serif; text-decoration: none; line-height:40px; width:100%;min-width:25px; display:inline-block;color: #ffffff") 7
+
+                table.survey(width="100%" border="0" cellpadding="0" cellspacing="0" style="font-family: Arial, Helvetica, sans-serif; font-weight: normal;width:100%; " )
+                    tr
+                        td(height="10")
+                        td
+                    tr
+                        td(style="font-family: Arial, Helvetica, sans-serif;color:#E43E3D;font-size:12px;font-weight: bold" align="left")
+                            span Zdecydowanie nieprzydatna
+                        td(style="font-family: Arial, Helvetica, sans-serif;color:#7FCD31;font-size:12px;font-weight: bold" align="right")
+                            span Bardzo przydatna
+                    tr
+                        td(height="10")
+                        td
+            td
+

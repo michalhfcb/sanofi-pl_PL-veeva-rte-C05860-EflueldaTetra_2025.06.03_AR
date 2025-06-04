@@ -1,0 +1,32 @@
+{
+  "name": "email_template",
+  "version": "4.0.0",
+  "main": "index.js",
+  "author": "Dawid Pierzak",
+  "license": "MIT",
+  "scripts": {
+    "vite:build": "cross-env NODE_ENV=production npx vite build --mode=production",
+    "vite:dev": "cross-env NODE_ENV=development npx vite --mode=development",
+    "build": "npm run vite:build",
+    "dev": "npm run vite:dev",
+    "create": "npx babel-node scripts/createMailing.js",
+    "export": "npm run build && npx babel-node scripts/exportMailing.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.9",
+    "@babel/node": "^7.26.0",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/register": "^7.25.9",
+    "@vituum/vite-plugin-pug": "^1.1.0",
+    "vite": "^6.2.1",
+    "vite-plugin-static-copy": "^2.3.0",
+    "vituum": "^1.1.1"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "fs-extra": "^11.1.0",
+    "jsdom": "^21.0.0",
+    "puppeteer": "^19.5.2",
+    "zip-local": "^0.3.5"
+  }
+}
